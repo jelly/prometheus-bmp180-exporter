@@ -9,6 +9,8 @@ humidity from a BMP180 sensor. Suitable for a RaspberryPi connected i2c.
 * prometheus_client
 * python-smbus
 
+The local Adafruit directory needs to be accessible in python's PYTHONPATH.
+
 # Usage
 
 Run the exporter
