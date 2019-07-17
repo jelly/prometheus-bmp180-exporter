@@ -20,9 +20,11 @@ class BMP180Collector():
         pressure = bmp.readPressure()
 
         temp_metric = Metric('bmp180_temp', 'BMP180 temperature', 'gauge')
+        temp_metric.add_sample('bmp180_temp', value=temp, labels={})
         yield temp_metric
 
         pressure_metric = Metric('bmp180_pressure', 'BMP180 pressure', 'gauge')
+        pressure_metric.add_sample('bmp180_pressure', value=pressure, labels={})
         yield pressure_metric
 
 
